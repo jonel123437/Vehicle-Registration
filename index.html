@@ -11,7 +11,17 @@
     <body>
         <div id="registerForm">
             <h1>Vehicle Registration</h1>
+            <div>
+                <form action="" id="loginForm">
+                    <h2 id="subtitle">Login</h2>
+                    <input type="text" placeholder="Email" id="email">
+                    <input type="text" placeholder="Password" id="password">
+                    <input type="text" placeholder="Confirm password" style="display: none;" id="confirmPassword">
+                    <button id="login">Log in</button>
+                    <p><span id="sign">Don't have an account? </span><span  id="sign1" style="color: blue; cursor: pointer;" onclick="toggleForm()">Signup</span></p>
+                </form>
+            </div>
         </div>
     </body>
-    <script></script>
+    <script src="assets/js/index.js"></script>
 </html>

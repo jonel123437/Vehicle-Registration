@@ -4,4 +4,17 @@
     height: 35rem;
     width: 25rem;
     text-align: center;
+    border-radius: 1rem;
+}
+#registerForm div {
+    margin-top: 5rem;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#loginForm button {
+    padding: 10px;
 }
