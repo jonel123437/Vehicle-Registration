@@ -2,9 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/registerForm.css">
     <title>Document</title>
 </head>
 <body>
-    hello world
+    <div id="registerForm">
+        <h1>Vehicle <br>Registration</h1>
+        <div style=" height: 20%; margin: 10px; ">
+            <div style="height: 100%;  margin: 10px;">
+                <img style="height: 100%;  " src="../assets/css/citelogo.png" alt="citelogo">
+
+            </div>
+        </div>
+        <div style="margin: 0;">
+            <form action="" id="loginForm">
+                <h2 id="subtitle">Signup</h2>
+                <input type="text" placeholder="Username" id="username" class="userInput">
+                <input type="text" placeholder="Email" id="email" class="userInput">
+                <input type="text" placeholder="Password" id="password" class="userInput">
+                <input type="text" placeholder="Confirm password" style="display: none;" id="confirmPassword">
+                <button id="login">Register</button>
+                <p><span id="sign">Already Registered? </span><span  id="sign1" style="color: blue; cursor: pointer;" onclick="toggleForm()">Login</span></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

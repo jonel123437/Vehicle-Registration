@@ -1,5 +1,5 @@
 #registerForm {
-    background-color: gray;
+    background-color: rgb(253, 253, 253);
     padding: 10px 20px;
     height: 35rem;
     width: 25rem;
@@ -17,4 +17,8 @@
 }
 #loginForm button {
     padding: 10px;
+}
+
+.userInput{
+    background-color: rgba(221, 208, 208, 0.761);
 }
