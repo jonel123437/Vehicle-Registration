@@ -4,7 +4,8 @@ body {
     align-items: center;
     height: 100vh;
     overflow-y: hidden;
-    background: rgb(7, 170, 252);
+    background-image: url(blurry_colorful_bg.png);
+    background-size: cover;
 }
 
 * {
@@ -23,4 +24,14 @@ button {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    color: white;
+    background: rgba(41, 41, 227, 0.646);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+button:hover{
+    background-color: rgb(41, 41, 227);
 }
