@@ -4,22 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vehicle Registration</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/registerForm.css">
     </head>
 
     <body>
         <div id="registerForm">
-            <h1>Vehicle Registration</h1>
-            <div>
+            <h1><span  id="title">Vehicle Registration</span><i id="gear" style="display: none; cursor: pointer;" class="fa fa-gear fa-spin"></i></h1>
+            <div id="logoutAdmin" style="display: none; cursor: pointer;">Logout</div>
+            <div class="loginContainer">
                 <form action="" id="loginForm">
                     <h2 id="subtitle">Login</h2>
-                    <input type="text" placeholder="Email" id="email">
-                    <input type="text" placeholder="Password" id="password">
-                    <input type="text" placeholder="Confirm password" style="display: none;" id="confirmPassword">
-                    <button id="login">Log in</button>
-                    <p><span id="sign">Don't have an account? </span><span  id="sign1" style="color: blue; cursor: pointer;" onclick="toggleForm()">Signup</span></p>
+                    <input type="text" placeholder="Vehicle ID" id="vehicleId">
+                    <input type="password" placeholder="Password" id="password">
+                    <button id="login" onclick="toAdmin()">Log in</button>
                 </form>
+            </div>
+            <div id="adminBtn" style="display: none;">
+                <button>Register vehicle</button>
+                <button>Search</button>
+                <button>Delete user</button>
             </div>
         </div>
     </body>

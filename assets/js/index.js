@@ -1,31 +1,52 @@
-var subtitle = document.getElementById('subtitle');
-var password = document.getElementById('password');
-var confirmPassword = document.getElementById('confirmPassword')
-var login = document.getElementById('login')
-var sign = document.getElementById('sign')
-var sign1 = document.getElementById('sign1')
-var loginForm = document.getElementById('loginForm')
-var email = document.getElementById('email')
-var password = document.getElementById('password')
+document.getElementById('login').addEventListener('click', function(event) {
+    event.preventDefault();
+    toAdmin();
+});
 
-function toggleForm() {
-    if (subtitle.innerText === "Login") {
-        subtitle.innerText = "Sign Up";
-        password.placeholder = "Create password";
-        confirmPassword.style.display = "block";
-        login.innerText = "Sign up";
-        sign.innerText = "Already have an account? ";
-        sign1.innerText = "Login";
-        email.id = "createEmail"
-        password.id = "createPassword"
+function toAdmin() {
+    var vehicleIdInput = document.getElementById('vehicleId');
+    var passwordInput = document.getElementById('password');
+    var vehicleId = vehicleIdInput.value.toLowerCase();
+    var password = passwordInput.value.toLowerCase();
+
+    if (vehicleId === "admin" && password === "admin") {
+        passwordInput.value = "";
+        vehicleIdInput.value = "";
+        displayAdmin();
     } else {
-        subtitle.innerText = "Login";
-        password.placeholder = "Password";
-        confirmPassword.style.display = "none";
-        login.innerText = "Log in";
-        sign.innerText = "Don't have an account? ";
-        sign1.innerText = "Signup";
-        email.id = "email"
-        password.id = "password"
+        toDashboard()
     }
 }
+
+function displayAdmin() {
+    var title = document.getElementById('title');
+    var gear = document.getElementById('gear');
+    var loginForm = document.getElementById('loginForm')
+
+    title.innerText = "Welcome admin";
+    gear.style.display = "block";
+    loginForm.style.display = "none"
+    adminBtn.style.display = "block"
+}
+
+function toDashboard() {
+}
+var logoutAdmin = document.getElementById('logoutAdmin');
+var gearIcon = document.getElementById('gear');
+
+gearIcon.addEventListener('click', function(){
+    if (logoutAdmin.style.display === "block") {
+        logoutAdmin.style.display = "none"; // Hide the logout element
+    } else {
+        logoutAdmin.style.display = "block"; // Show the logout element
+    }
+});
+
+logoutAdmin.addEventListener('click', function() {
+    title.innerText = "Vehicle Registration"; // Reset title
+    gear.style.display = "none"; // Hide gear icon
+    loginForm.style.display = "flex"; // Show login form
+    adminBtn.style.display = "none"; // Hide admin buttons
+    logoutAdmin.style.display = "none"; // Hide logout button again
+});
+
