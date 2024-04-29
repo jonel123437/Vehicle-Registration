@@ -53,12 +53,7 @@ button {
 button:hover{
     background-color: rgb(41, 41, 227);
 }
-.citelogo {
-    width: 8.5rem;
-    height: 8.5rem;
-    position: absolute;
-    top: -25px;
-}
+
 a{
     text-decoration: none;
 }
