@@ -1,10 +1,15 @@
 #registerForm {
+    position: relative;
+    background-color: rgb(253, 253, 253);
     padding: 10px 20px;
     height: 35rem;
     width: 25rem;
-    text-align: center;
     border-radius: 1rem;
-    box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 5px 5px 30px 3px rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: 2px solid rgb(41, 41, 227);
 }
 .loginContainer {
     margin-top: 5rem;
@@ -18,10 +23,13 @@
 #loginForm button {
     padding: 10px;
 }
-#adminBtn {
-    display: flex;
-    flex-direction: column;
+
+.userInput {
+    background-color: rgba(221, 208, 208, 0.761);
 }
-#logoutAdmin {
-    position: relative;
+.userInputName{
+    margin: 0px;
+    padding: 10px;
+    width: calc(50% - 12px);
+    box-sizing: border-box;
 }
