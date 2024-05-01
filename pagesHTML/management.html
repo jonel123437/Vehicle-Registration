@@ -4,22 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../assets/css/styles.css">
         <title>Management</title>
-        <style>
-            table {
-              width: 90%;
-              background-color: aliceblue;
-              border-collapse: collapse;
-              margin: 0 auto; /* Center the table */
-            }
-            th, td {
-              padding: 10px;
-              text-align: left;
-              border-bottom: 1px solid #ddd;
-            }
-            th {
-              background-color: #f2f2f2;
-            }
-          </style>
     </head>
     <body id="managementBody" style="display: flex; flex-direction: column; height: 100vh; width: 100vw;">
         <div style="background-color: white; border: 1px solid rgba(0, 0, 0, 0.19); width: 100%; height: 10%; display: flex; align-items: center;">
@@ -41,7 +25,7 @@
         </div> -->
         <main style="height: 90%; display: flex;  width: inherit; background-color: #eee;">
             <div style="padding: 40px; width: 100%; display: flex; gap: 3em;">
-                <div style="display: flex; background-color: white; width: 50%; flex-direction: column; align-items: start; border-radius: 10px; border: 0.5px solid #cecece;">
+                <div style="display: flex; background-color: white; width: 70%; flex-direction: column; align-items: start; border-radius: 10px; border: 0.5px solid #cecece;">
                     <form action="" style="display: flex; width: 100%; justify-content: space-between;">
                         <div style="margin: 2rem; display: flex; gap: 4px; ">
                             <input id="search" placeholder="Search..." type="search" style="border-radius: 50px; background-color: #eee;">
@@ -79,11 +63,29 @@
                         </table>
                     </div>
                 </div>
-                <div style="display: flex; width: 50%; flex-direction: column; gap: 20px;">
-                    <div style="display: flex; background-color: white; width: 100%; height: 60%; border-radius: 10px; border: 0.5px solid #cecece;">
-                        
+                <div style="display: flex; width: 30%; flex-direction: column; gap: 20px;">
+                    <div style="display: flex; background-color: white; width: 100%; height: 70%; border-radius: 10px; border: 0.5px solid #cecece;">
+                        <form action="" style="display: flex; width: 100%;  flex-direction: column;">
+                            <div style="margin: 2rem; display: flex; gap: 4px;">
+                                <label for="filter"  "><img src="../assets/css/userIcon.png" alt=""></label>
+                                <select name="filter" id="filter" style="width: 11rem; border-radius: 50px; appearance: none; padding-inline: 10px; background-color: #eee; border: 0;">
+                                    <option value="">Select a role</option>
+                                    <option value="2-wheels">management</option>
+                                    <option value="4-wheels">user</option>
+                                </select>
+                            </div>
+                            <div style="display: flex; flex-direction: column; margin-inline: 2rem; gap: 10px;">
+                                <label for="name"> Name:</label>
+                                <input type="text" name="name" placeholder="Name" style="width: 80%; border-radius: 10px; background-color: #eee;">
+                                <label for="email"> Email:</label>
+                                <input type="email" name="email" placeholder="Email" style="width: 80%; border-radius: 10px; background-color: #eee;">
+                                <label for="password"> Password:</label>
+                                <input type="password" name="password" placeholder="Password" style="width: 80%; border-radius: 10px; background-color: #eee;">
+                                <input type="button" value="SUBMIT" style="margin-top: 2rem;">
+                            </div>
+                        </form>
                     </div>
-                    <div style="display: flex; background-color: white; width: 100%; height: 40%; border-radius: 10px; border: 0.5px solid #cecece;">
+                    <div style="display: flex; background-color: white; width: 100%; height: 30%; border-radius: 10px; border: 0.5px solid #cecece;">
                         
                     </div>
                 </div>
