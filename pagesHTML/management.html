@@ -3,12 +3,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../assets/css/styles.css">
-        <title>Document</title>
+        <title>Management</title>
     </head>
-    <body id="managementBody" style="display: flex; flex-direction: column; height: 100%; ">
-        <div style="background-color: red; width: inherit; height: 10%; display: flex; align-items: center;">
+    <body id="managementBody" style="display: flex; flex-direction: column; height: 100vh; width: 100vw;">
+        <div style="background-color: white; border: 1px solid rgba(0, 0, 0, 0.19); width: 100%; height: 10%; display: flex; align-items: center;">
             <nav style="margin-inline: 20px;">
-                <span onclick="openNav()">OPEN</span>
+                <p style="font-size: x-large; letter-spacing: 0.05em;" onclick="">MANAGEMENT</p>
             </nav>
         </div>
         <!-- <div id="mySidenav" class="sidenav" ">
@@ -23,15 +23,30 @@
                 <a href="#">Logout</a>
             </div>
         </div> -->
-        <main style="height: 90%; display: flex; background-color: blue; width: inherit;">
-            <div style="padding: 40px; background-color: azure; width: 100%; display: flex; gap: 3em;">
-                <div style="display: flex; background-color: aqua; width: 50%;">
+        <main style="height: 90%; display: flex;  width: inherit; background-color: #eee;">
+            <div style="padding: 40px; width: 100%; display: flex; gap: 3em;">
+                <div style="display: flex; background-color: white; width: 50%; border-radius: 10px; border: 0.5px solid #cecece;">
                     
                 </div>
-                <div style="display: flex; background-color: wheat; width: 50%; flex-direction: column; align-items: start;">
-                    <div style="margin: 2rem;">
-                        <label for="search">Search</label>
-                            <input id="search" type="search">
+                <div style="display: flex; background-color: white; width: 50%; flex-direction: column; align-items: start; border-radius: 10px; border: 0.5px solid #cecece;">
+                    <form action="" style="display: flex; width: 100%; justify-content: space-between;">
+                        <div style="margin: 2rem; display: flex; gap: 4px; ">
+                            <input id="search" placeholder="Search..." type="search" style="border-radius: 50px; background-color: #eee;">
+                            <label for="search" style="margin-top: 2px;"><img src="../assets/css/searchIcon.png" alt=""></label>
+                        </div>
+                        <div style="margin: 2rem; display: flex; gap: 4px; ">
+                            <label for="filter"><img src="../assets/css/filterIcon.png" alt=""></label>
+                            <select name="filter" id="filter" style="width: 11rem; border-radius: 50px; appearance: none; padding-inline: 10px; background-color: #eee; border: 0;">
+                                <option value="">Select an option</option>
+                                <option value="2-wheels">2-wheels</option>
+                                <option value="4-wheels">4-wheels</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div style="background-color: red;">
+                        <table>
+
+                        </table>
                     </div>
                 </div>
             </div>
