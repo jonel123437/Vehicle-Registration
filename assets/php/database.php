@@ -1,12 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "michael";
-$password = "root";
-$dbname = "SignUpDB";
+    $host = "localhost";
+    $username = "michael";
+    $password = "root";
+    $dbname = "signupdb";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+    try {
+        $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        die("Error: Could not connect. " . $e->getMessage());
+    }
 ?>
