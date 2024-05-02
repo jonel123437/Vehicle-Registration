@@ -9,6 +9,10 @@ function handleSignupForm(event) {
     .then(response => response.text())
     .then(data => {
         console.log(data);
+        if (data.trim() === "Signup successful!") {
+            window.location.href = "../index.html";
+            alert('Sign-up Successful')
+        }
     })
     .catch(error => {
         console.error(error);
