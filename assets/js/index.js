@@ -5,3 +5,19 @@ document.querySelector('.loginButton').addEventListener('click', function(){
         window.location.href = "../../pagesHTML/admin.html";
     }
 })
+function handleSignupForm(event) {
+    event.preventDefault();
+    var formData = new FormData(document.getElementById("loginForm"));
+
+    fetch('signup.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+}
