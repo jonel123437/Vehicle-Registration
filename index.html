@@ -4,29 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vehicle Registration</title>
+        <link rel="icon" href="assets/img/iconTabLogo.png" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/registerForm.css">
+        <link rel="stylesheet" href="assets/css/loginForm.css">
     </head>
 
     <body>
-        <div id="registerForm">
-            <h1><span  id="title">Vehicle <br>Registration</span><i id="gear" style="display: none; cursor: pointer;" class="fa fa-gear fa-spin"></i></h1>
-            <div id="logoutAdmin" style="display: none; cursor: pointer;">Logout</div>
-            <div class="loginContainer">
-                <form action="" id="loginForm">
-                    <h2 id="subtitle">Login</h2>
-                    <input class="form-control" type="text" placeholder="Vehicle ID" id="vehicleId">
-                    <input class="form-control" type="password" placeholder="Password" id="password">
-                    <button class="btn btn-primary" id="login" onclick="toAdmin()">Log in</button>
-                </form>
-            </div>
-            <div id="adminBtn" style="display: none;">
-                <button class="btn btn-secondary">Register vehicle</button>
-                <button class="btn btn-secondary">Search</button>
-                <button class="btn btn-secondary">Delete user</button>
-            </div>
+        <div class="loginForm">
+            <img class="citelogo" src="assets/img/citelogo.png" alt="">
+            <h1 style="padding-bottom: 3rem;">Vehicle <br>Registration</h1>
+            <form action="" method="post">
+                <div class="input_container">
+                    <input id="email" class="login_input" type="" placeholder="Email">
+                </div>
+                <div class="input_container">
+                    <input id="password" class="login_input" type="password" placeholder="Password">
+                </div>
+                <div class="input_container">
+                    <button class="loginButton">Login</button>
+                </div>
+                <p>Don't have an account yet?<a href="pagesHTML/SignUp.html"> Signup</a></p>
+            </form>
         </div>
     </body>
     <script src="assets/js/index.js"></script>

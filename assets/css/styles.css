@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow-y: hidden;
-    background-image: url(blurry_colorful_bg.png);
+    background-image: url(../img/blurry_colorful_bg.png);
     background-size: cover;
 }
 
@@ -30,6 +30,8 @@ input {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0, 0, 0, 0.425);
 }
 
 button {
@@ -50,4 +52,8 @@ button {
 }
 button:hover{
     background-color: rgb(41, 41, 227);
+}
+
+a{
+    text-decoration: none;
 }
