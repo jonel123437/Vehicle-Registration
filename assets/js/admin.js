@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="nav">
                     <div class="search">
                         <input type="text" placeholder="Search...">
-                        <button type="submit"><img src="assets/images/search.png" alt=""></button>
+                        <button type="submit"><img style="cursor: pointer;" src="../assets/img/search.png" alt=""></button>
                     </div>
                 </div>
             </div>`;

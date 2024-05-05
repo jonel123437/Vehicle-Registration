@@ -1,3 +1,14 @@
+document.querySelector('.loginButton').addEventListener('click', function(){
+    var email = document.getElementById('email').value.toLowerCase();
+    var password = document.getElementById('password').value.toLowerCase();
+    if (email == "admin" && password == "admin"){
+        window.location.href = "../../pagesHTML/admin.html";
+        alert('Welcome, Admin!')
+    }
+});
+
+
+document.getElementById("loginForm").addEventListener("submit", handleSignupForm);
 function handleSignupForm(event) {
     event.preventDefault();
     var formData = new FormData(document.getElementById("loginForm"));
@@ -19,12 +30,4 @@ function handleSignupForm(event) {
     });
 }
 
-document.getElementById("loginForm").addEventListener("submit", handleSignupForm);
 
-document.querySelector('.loginButton').addEventListener('click', function(){
-    var email = document.getElementById('email').value.toLowerCase();
-    var password = document.getElementById('password').value.toLowerCase();
-    if (email == "admin" && password == "admin"){
-        window.location.href = "../../pagesHTML/admin.html";
-    }
-});
