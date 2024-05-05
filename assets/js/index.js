@@ -4,7 +4,10 @@ document.querySelector('.loginButton').addEventListener('click', function(){
     if (email == "admin" && password == "admin"){
         window.location.href = "../pagesHTML/admin.html";
         alert('Welcome, Admin!')
-    }
+    } else {
+        window.location.href = "../pagesHTML/dashboard.html";
+        alert('Welcome')
+    };
 });
 
 
