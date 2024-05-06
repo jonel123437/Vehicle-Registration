@@ -1,0 +1,29 @@
+.profileContainer1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgb(201, 201, 201);
+    height: 15rem;
+}
+.profileContainer {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.detailContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgb(201, 201, 201);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.userDetails {
+    border: 1px solid rgb(201, 201, 201);
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 110vh;
+    padding: 1rem;
+    padding-right: 30rem;
+}
