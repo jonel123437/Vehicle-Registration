@@ -13,16 +13,36 @@ a {
     text-decoration: none;
 }
 
+.container .details {
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    margin-top: -30%;
+}
+
+
+.citelogo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    padding-top: 70px;
+    margin-left: 25%;
+}
+
 li {
     list-style: none;
 }
 
-h1,h2 {
+h1 {
     color: #444;
-}
-
-h3 {
-    color: #999;
 }
 
 .btn {
@@ -94,7 +114,7 @@ th, td {
     right: 0;
     width: 80vw;
     height: 100vh;
-    background: #a5a6a8;
+    background: #eaecee;
 }
 
 .container .header {
