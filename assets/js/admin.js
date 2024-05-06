@@ -24,11 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = `
             <div class="form">
                 <form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
-                    <input type="submit" value="Submit">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <input type="submit" value="Add">
                 </form>
             </div>`;
     });
