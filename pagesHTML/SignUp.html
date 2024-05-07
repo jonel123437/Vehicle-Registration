@@ -22,13 +22,13 @@
             <form action="../assets/php/signup.php" onsubmit="handleSignupForm(event)" method="post" id="loginForm">
                 <!-- <h2 id="subtitle">Signup</h2> -->
                 <div style="margin: 0; display: flex; gap: 5px; justify-content: space-between; margin-top: 20px;">
-                    <input type="text" placeholder="First Name" id="fname" class="userInput userInputName">
-                    <input type="text" placeholder="Last Name" id="lname" class="userInput userInputName">
+                    <input type="text" placeholder="First Name" id="fname" class="userInput userInputName" required>
+                    <input type="text" placeholder="Last Name" id="lname" class="userInput userInputName" required>
                 </div>
-                <input type="text" placeholder="Username" id="username" class="userInput">
-                <input type="text" placeholder="Email" id="email" class="userInput">
-                <input type="text" placeholder="Password" id="password" class="userInput">
-                <input type="text" placeholder="Confirm password" style="display: none;" id="confirmPassword">
+                <input type="text" placeholder="Username" id="username" class="userInput" required>
+                <input type="text" placeholder="Email" id="email" class="userInput" required>
+                <input type="text" placeholder="Password" id="password" class="userInput" required>
+                <input type="text" placeholder="Confirm password" style="display: none;" id="confirmPassword" required>
                 <button id="login">Signup</button>
                 <p><span id="sign">Already Registered? </span><a href="../index.html" id="sign1" style="color: blue; cursor: pointer;">Login</a></p>
             </form>
