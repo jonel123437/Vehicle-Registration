@@ -13,12 +13,15 @@
 <body>
     <div class="side-menu">
         <div class="brand-name">
-            <h1 style="cursor: pointer;"><img src="../assets/img/profile.jpg" alt="" >&nbsp<span >Admin</span> </h1>
+            <div style="margin-top: 20px; align-content: center;">
+                <h1 style="cursor: pointer; padding-top: 5px;"><img onclick="myFunction()" src="../assets/img/profile1.png" alt="" ><span style="font-size: 40px; margin-bottom: 2px; color: black;" onclick="myFunction();">Admin</span> </h1>
+            </div>
         </div>
-        <ul>
+        <ul style="margin-top: 40px;">
             <li style="cursor: pointer;"><span id="Home">Home</span></li>
             <li style="cursor: pointer;"><span id="searchFilter">Search Filter</span> </li>
             <li style="cursor: pointer;"><span id="addRoles">Add User Roles</span> </li>
+            <li style="cursor: pointer; display: flexbox; justify-content: center; margin-top: 120%"><span><a style="color: black;" href="../index.html">Logout</a></span></li>
         </ul>
     </div>
 
@@ -42,6 +45,12 @@
         </div>
     </div>
 
-</body>
     <script src="../assets/js/admin.js"></script>
+
+    <script>
+        function myFunction() {
+          location.reload();
+        }
+    </script>
+</body>
 </html>
