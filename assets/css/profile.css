@@ -17,6 +17,7 @@
     border: 1px solid rgb(201, 201, 201);
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-bottom: 10rem;
 }
 
 .userDetails {
@@ -26,4 +27,18 @@
     height: 110vh;
     padding: 1rem;
     padding-right: 30rem;
+}
+
+.courseDetails {
+    border: 1px solid rgb(201, 201, 201);
+    margin-top: 2rem;
+    margin-right: 3rem;
+    height: 50vh;
+    padding: 1rem;
+    padding-right: 30rem;
+    position: absolute;
+    top: 22.7rem;
+    bottom: 0;
+    right: 0;
+    width: 250px;
 }
