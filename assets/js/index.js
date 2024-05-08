@@ -5,7 +5,7 @@ document.querySelector('.loginButton').addEventListener('click', function(){
         window.location.href = "pagesHTML/admin.html";
         alert('Welcome, Admin!')
     } else {
-        window.location.href = "../pagesHTML/dashboard.html";
+        window.location.href = "pagesHTML/dashboard.html";
         alert('Welcome')
     };
 });
