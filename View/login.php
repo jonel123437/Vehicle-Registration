@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vehicle Registration</title>
+        <link rel="icon" href="../assets/img/iconTabLogo.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/loginForm.css">
+    </head>
+
+    <body>
+        <div class="loginForm">
+            <img class="citelogo" src="../assets/img/citelogo.png" alt="">
+            <h1 style="padding-bottom: 3rem;">Vehicle <br>Registration</h1>
+            <form action="index.php?action=login" method="post">
+                <div class="input_container">
+                    <input id="email" class="login_input" type="" placeholder="Email">
+                </div>
+                <div class="input_container">
+                    <input id="password" class="login_input" type="password" placeholder="Password">
+                </div>
+                <div class="input_container">
+                    <button class="loginButton">Login</button>
+                </div>
+                <p>Don't have an account yet?<a href="../index.php"> Signup</a></p>
+            </form>
+        </div>
+    </body>
+    <script src="../assets/js/index.js"></script>
+</html>

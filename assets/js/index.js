@@ -16,7 +16,7 @@ function handleSignupForm(event) {
     event.preventDefault();
     var formData = new FormData(document.getElementById("loginForm"));
 
-    fetch('../assets/php/signup.php', {
+    fetch('index.php?action=signup', {
         method: 'POST',
         body: formData
     })
@@ -24,7 +24,7 @@ function handleSignupForm(event) {
     .then(data => {
         console.log(data);
         if (data.trim() === "Signup successful!") {
-            window.location.href = "../index.html";
+            window.location.href = "../index.php";
             alert('Sign-up Successful')
         }
     })
